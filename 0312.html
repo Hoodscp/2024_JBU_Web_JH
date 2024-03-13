@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0312 WebProgramming Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 메뉴 -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li>
+            <a href="0312.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="Contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 메인섹션 -->
+    <section class="main">
+      <div class="containter">
+        <h1>WebProgramming</h1>
+        <h3>
+          Manual Sites For Web Programmer :
+          <a href="https://www.W3Schools.com">W3Schools</a>
+          <a href="https://developer.mozilla.org/ko/">Mozilla</a>
+        </h3>
+        <p>
+          웹 프로그래밍의 3가지 요소 :
+          <a href="https://www.w3schools.com/html/default.asp">HTML</a>
+          <a href="https://www.w3schools.com/css/default.asp">CSS</a>
+          <a href="https://www.w3schools.com/js/default.asp">JS</a>
+        </p>
+        <h3>Current Time : <span id="Time"></span></h3>
+      </div>
+      <hr />
+      <p>
+        배경색 바꾸기 :
+        <button onclick="pink()">Pink</button>
+        <button onclick="gray()">Gray</button>
+      </p>
+      <p>
+        배경색 되바꾸기 :
+        <button onclick="color_back()">color_back</button>
+      </p>
+      <p>
+        <button onmouseover="showhtml()" onmouseout="hide()">HTML5</button>
+        <button onmouseover="showcss()" onmouseout="hide()">CSS</button>
+        <button onmouseover="showjs()" onmouseout="hide()">JAVAScript</button>
+      </p>
+      <hr />
+      <br /><br />
+      <div>
+        <img id="fig" height="200px" alt="" />
+        <p id="dsc"></p>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
