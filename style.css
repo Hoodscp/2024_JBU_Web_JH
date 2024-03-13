@@ -38,7 +38,7 @@ button:hover {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -54,7 +54,7 @@ button:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 40px;
+  height: 100%;
 }
 
 .navbar ul {
