@@ -86,3 +86,7 @@ button:hover {
 #photo {
   height: 50%;
 }
+
+table {
+  border: 10px;
+}
