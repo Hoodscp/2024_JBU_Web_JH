@@ -82,3 +82,7 @@ button:hover {
   border-bottom: 2px gray solid;
   color: skyblue;
 }
+
+.photo {
+  height: 50%;
+}
