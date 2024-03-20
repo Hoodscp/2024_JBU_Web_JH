@@ -116,7 +116,7 @@ td {
   ); /* 사이드바 위와 아래의 마진을 동일하게 지정 */
   border-radius: 20px;
   transform: translate(
-    calc(var(--side-bar-width) * -0.8),
+    calc(var(--side-bar-width) * -0.7),
     0
   ); /* X축 이동, Y축 고정 */
   transition: 0.5s;
@@ -134,12 +134,12 @@ td {
   font-weight: bold;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 40px;
+  padding-left: 35px;
 }
 
 .side-bar ul > li > ul > li > a {
   color: black;
-  padding-left: auto;
+  padding-left: 35px;
 }
 
 .side-bar ul > li:hover > a {
@@ -163,8 +163,5 @@ td {
 
 /* 마우스 인식 시 원래의 위치로 이동 */
 .side-bar:hover {
-  transform: translate(
-    -20px,
-    0
-  ); /* 둥근 모서리의 너비만큼 X축 이동, Y축 고정 */
+  transform: translate(0px, 0); /* 둥근 모서리의 너비만큼 X축 이동, Y축 고정 */
 }

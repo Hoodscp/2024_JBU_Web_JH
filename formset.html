@@ -68,12 +68,44 @@
       </ul>
     </aside>
 
-    <form>
-      <label>First Name:</label>
-      <input type="text" name="fname" id="fname" value="Jihoon" />
-      <br />
-      <label>Last Name:</label>
-      <input type="text" name="lname" id="lname" value="Lee" />
-    </form>
+    <section class="main">
+      <div class="container">
+        <form>
+          <label for="fname">First Name:</label>
+          <input type="text" name="fname" id="fname" value="Jihoon" />
+          <br />
+          <label for="lname">Last Name:</label>
+          <input type="text" name="lname" id="lname" value="Lee" />
+          <br />
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" />
+          <br />
+          <input type="search" name="" id="" value="search" />
+          <br />
+          <input type="url" name="" id="" value="url" />
+          <br />
+          <input type="email" name="" id="" value="email" />
+        </form>
+      </div>
+      <div class="container">
+        <fieldset>
+          <legend>Select</legend>
+          <p>Select your item</p>
+          <label for="">
+            <input type="checkbox" name="" id="" value="1kg" /> 1kg
+            <br />
+            <input type="checkbox" name="" id="" value="3kg" /> 3kg
+            <br />
+            <input type="checkbox" name="" id="" value="5kg" /> 5kg
+            <br />
+          </label>
+          <p>Select Box</p>
+          <label for="">
+            <input type="radio" name="Box" id="normal" /> normal
+            <input type="radio" name="Box" id="special" /> special
+          </label>
+        </fieldset>
+      </div>
+    </section>
   </body>
 </html>
