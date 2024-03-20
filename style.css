@@ -100,8 +100,8 @@ td {
 
 /* 사이드바의 너비와 높이를 변수를 통해 통제 */
 :root {
-  --side-bar-width: 270px;
-  --side-bar-height: 90vh;
+  --side-bar-width: 100px;
+  --side-bar-height: 400px;
 }
 
 .side-bar {
@@ -114,15 +114,57 @@ td {
   margin-top: calc(
     (100vh - var(--side-bar-height)) / 2
   ); /* 사이드바 위와 아래의 마진을 동일하게 지정 */
+  border-radius: 20px;
+  transform: translate(
+    calc(var(--side-bar-width) * -0.8),
+    0
+  ); /* X축 이동, Y축 고정 */
+  transition: 0.5s;
+}
+
+.side-bar > ul > li {
+  position: relative;
 }
 
 /* 모든 메뉴의 a에 속성값 부여 */
 .side-bar ul > li > a {
   display: block;
   color: white;
-  font-size: 1.4rem;
+  font-size: 10px;
   font-weight: bold;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 50px;
+  padding-left: 40px;
+}
+
+.side-bar ul > li > ul > li > a {
+  color: black;
+  padding-left: auto;
+}
+
+.side-bar ul > li:hover > a {
+  color: black;
+  border-radius: 20px;
+  background-color: lightblue;
+}
+
+/* 1차 메뉴의 항목이 마우스 인식 시에 2차 메뉴 등장 */
+.side-bar > ul > li:hover > ul {
+  color: black;
+  display: block;
+  position: absolute;
+  background-color: skyblue;
+  border: 1px solid black;
+  border-radius: 20px;
+  top: 0; /* 2차 메뉴의 상단을 1차 메뉴의 상단에 고정 */
+  left: 100%; /* 2차 메뉴를 1차 메뉴의 너비만큼 이동 */
+  width: 100%; /* 1차 메뉴의 너비를 상속 */
+}
+
+/* 마우스 인식 시 원래의 위치로 이동 */
+.side-bar:hover {
+  transform: translate(
+    -20px,
+    0
+  ); /* 둥근 모서리의 너비만큼 X축 이동, Y축 고정 */
 }
