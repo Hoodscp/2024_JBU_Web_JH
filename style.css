@@ -91,7 +91,10 @@ button:hover {
 table,
 th,
 td {
-  border: 3px solid gray;
+  border: 3px solid black;
+  background-color: lightblue;
+  color: black;
+  border-radius: 5px;
 }
 
 .side-bar > ul ul {
@@ -102,6 +105,10 @@ td {
 :root {
   --side-bar-width: 100px;
   --side-bar-height: 400px;
+}
+
+object {
+  padding-left: 200px;
 }
 
 .side-bar {
