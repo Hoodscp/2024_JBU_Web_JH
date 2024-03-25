@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- 메뉴 -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="Contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 사이드바 -->
+    <aside class="side-bar">
+      <section class="side-bar__icon-box">
+        <section class="side-bar__icon-1">
+          <div></div>
+          <div></div>
+          <div></div>
+        </section>
+      </section>
+      <ul>
+        <li>
+          <a href="index.html"><i class="fa-solid fa-cat"></i> Home</a>
+        </li>
+        <li>
+          <a href="#">Menu</a>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="formset.html">Formset</a></li>
+            <li><a href="report.html">report</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">menu3</a>
+          <ul>
+            <li><a href="#">text1</a></li>
+            <li><a href="#">text2</a></li>
+            <li><a href="#">text3</a></li>
+            <li><a href="#">text4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">menu4</a>
+          <ul>
+            <li><a href="#">text1</a></li>
+            <li><a href="#">text2</a></li>
+            <li><a href="#">text3</a></li>
+            <li><a href="#">text4</a></li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- 리포트 작성 부분 -->
+    <div class="container">
+      <h1>2024 SECON 참관 보고서</h1>
+      <h3>1. 2021년과는 또 다른 SECON 의 모습</h3>
+      21학번 1학년시절에도 SECON 을 다녀왔었다. 그때는 정말 보안에 대해 전혀
+      알지 못하던 때라서 참관을 해도 회사들이 무슨 제품, 솔루션들을 파는 건지 잘
+      모르던 때였다. 이번 2024 SECON을 다녀와서도 사실 아직 모든 걸 이해하고
+      그런 건 아니지만, 내가 관심이 있던 분야의 제품이나 솔루션을 제공하는
+      회사들이 몇 개 보여서 가서 구경도 하고, 직원분들에게 작게 질문들도 해보는
+      시간을 가졌다. 참 유익하고 나도 나중에 이런 보안 업계에서 활동하고 싶다고
+      동기부여를 얻을 수 있던 자리였다.
+    </div>
+    <div class="container">
+      <h3>2. 보안 스위치</h3>
+      <button onmouseover="showimg1()" onmouseout="hide()">사진 첨부</button>
+      <div class="container">
+        <img id="fig" height="200px" alt="" />
+        <p id="dsc"></p>
+      </div>
+
+      <div>
+        <h3>3. 다크웹 내 정보 유출 모니터링 서비스</h3>
+        <button onmouseover="showimg2()" onmouseout="hide2()">사진 첨부</button>
+      </div>
+      <div class="container">
+        <img id="fig2" height="200px" alt="" />
+        <p id="dsc2"></p>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>

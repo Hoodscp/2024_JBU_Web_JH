@@ -26,7 +26,32 @@ function showjs() {
   document.getElementById('dsc').innerHTML = '<b>wa!!!</b>JAVAScrpint'
 }
 
+function showimg0() {
+  document.getElementById('fig').src = 'img/secon0.jpg'
+  document.getElementById('dsc').innerHTML = 'SECON 내부 사진이다.'
+}
+
+function showimg1() {
+  document.getElementById('fig').src = 'img/secon1.jpg'
+  document.getElementById('dsc').innerHTML = '보안 스위치의 사진이다.'
+}
+
+function showimg2() {
+  document.getElementById('fig2').src = 'img/secon2.jpg'
+  document.getElementById('dsc2').innerHTML =
+    '실제로 다크웹에서 얻어오는 정보의 사진이다.'
+}
+
+function showimg3() {
+  document.getElementById('fig').src = 'img/secon3.jpg'
+  document.getElementById('dsc').innerHTML = ''
+}
+
 function hide() {
   document.getElementById('fig').src = ''
   document.getElementById('dsc').innerHTML = ''
+}
+function hide2() {
+  document.getElementById('fig2').src = ''
+  document.getElementById('dsc2').innerHTML = ''
 }
