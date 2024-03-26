@@ -44,6 +44,17 @@ button:hover {
   padding: 0 20px;
 }
 
+.box1 {
+  margin: 0 20px;
+  padding: 0 20px;
+  max-width: 100px;
+  max-height: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  border-style: dotted;
+}
+
 .navbar {
   background-color: black;
   color: white;
@@ -91,7 +102,7 @@ button:hover {
 table,
 th,
 td {
-  border: 3px solid black;
+  border: 3px solid rgb(48, 119, 189);
   background-color: lightblue;
   color: black;
   border-radius: 5px;
